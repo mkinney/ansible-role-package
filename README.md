@@ -103,6 +103,23 @@ None.
     }
 ```
 
+## Testing
+Using molecule to test. 
+
+To get started, run these commands:
+- virtualenv venv
+- source venv/bin/activate
+- pip install ansible
+- pip install docker-py
+- pip install molecule --pre
+- pip freeze > requirements.txt
+
+Note: The molecule testing was generated using this command:
+molecule init scenario --role-name GROG.package --scenario-name default
+
+Based on the 'pre' version of molecule, need to change the docker_container's log_driver from 'syslog' to 'none' in molecule/default/create.yml otherwise you will get this error:
+    failed: [localhost] (item=(censored due to no_log)) => {"censored": "the output has been hidden due to the fact that 'no_log: true' was specified for this result"})
+
 ## Contributing
 
 All assistance, changes or ideas [welcome][issues]!
