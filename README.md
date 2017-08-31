@@ -136,8 +136,8 @@ MIT
 
 [galaxy_image]:         http://img.shields.io/badge/galaxy-GROG.package-660198.svg?style=flat
 [galaxy_link]:          https://galaxy.ansible.com/GROG/package
-[travis_image]:         https://travis-ci.org/GROG/ansible-role-package.svg?branch=master
-[travis_link]:          https://travis-ci.org/GROG/ansible-role-package
+[travis_image]:         https://travis-ci.org/mkinney/ansible-role-package.svg?branch=master
+[travis_link]:          https://travis-ci.org/mkinney/ansible-role-package
 [tag_image]:            https://img.shields.io/github/tag/GROG/ansible-role-package.svg
 [tag_url]:              https://github.com/GROG/ansible-role-package/tags
 [gitter_image]:         https://badges.gitter.im/GROG/chat.svg
