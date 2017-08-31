@@ -2,4 +2,9 @@
 - name: Converge
   hosts: all
   roles:
-    - role: GROG.package
+    - { role: GROG.package,
+      become: yes,
+        package_list: [
+          { name: tree }
+        ]
+    }

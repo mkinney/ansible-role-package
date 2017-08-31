@@ -120,6 +120,9 @@ molecule init scenario --role-name GROG.package --scenario-name default
 Based on the 'pre' version of molecule, need to change the docker_container's log_driver from 'syslog' to 'none' in molecule/default/create.yml otherwise you will get this error:
     failed: [localhost] (item=(censored due to no_log)) => {"censored": "the output has been hidden due to the fact that 'no_log: true' was specified for this result"})
 
+If you get this error, "failed: [localhost] (item=(censored due to no_log)) => {"censored": "the output has been hidden due to the fact that 'no_log: true' was specified for this result"}" you may need to run a command similar to this: 
+    eval "$(docker-machine env default)"
+
 ## Contributing
 
 All assistance, changes or ideas [welcome][issues]!

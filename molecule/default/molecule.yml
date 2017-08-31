@@ -6,8 +6,18 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: instance
+  - name: centos_7
     image: centos:7
+  - name: debian_wheezy
+    image: debian:wheezy
+  - name: fedora_24
+    image: fedora:24
+  - name: opensuse_423
+    image: opensuse:42.3
+  - name: ubuntu_xenial
+    image: ubuntu:xenial
+  - name: oraclelinux_74
+    image: oraclelinux:7.4
 provisioner:
   name: ansible
   lint:
