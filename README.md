@@ -104,7 +104,7 @@ None.
 ```
 
 ## Testing
-Using molecule to test. 
+Using molecule (version 2) to test. 
 
 To get started, run these commands:
 - virtualenv venv
